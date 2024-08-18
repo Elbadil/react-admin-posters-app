@@ -1,13 +1,13 @@
 import {
-  Edit,
+  Create,
   NumberInput,
   ReferenceInput,
   SimpleForm,
   TextInput,
 } from "react-admin";
 
-export const PosterEdit = () => (
-  <Edit>
+export const PosterCreate = () => (
+  <Create>
     <SimpleForm>
       <TextInput source="id" />
       <ReferenceInput source="category_id" reference="categories" />
@@ -21,7 +21,7 @@ export const PosterEdit = () => (
       <NumberInput source="stock" />
       <NumberInput source="sales" />
     </SimpleForm>
-  </Edit>
+  </Create>
 );
 
-export default PosterEdit;
+export default PosterCreate;
